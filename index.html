@@ -10,11 +10,12 @@
 </head>
 <body>
 	<header>
-		<h1 class="title1" id="h1">Virginia Claire Olmstead</h1>
+		<h1 class="h1OG" id="h1">Virginia Claire Olmstead</h1>
 		<div>
-			<nav class="nav" id="nav1">
+			<nav class="navOG" id="nav1">
 				<a href="#portfolio">Portfolio. </a>
 				<a href="#education">Education. </a>
+				<a href="#aboutMe">About Me. </a>
 				<a href="#contact">Contact Me.</a>
 		</nav>
 		</div>
@@ -22,68 +23,111 @@
 	<div>
 		<main>
 			<div>
-				<article id="portfolio">
-					<h2 class="title2">Portfolio</h2>
-					<ul class="container vue">
-						<li>html/css/js</li>
-							<ul class="container vue" v-for="(group, name) in groups">
-								<li id="sub" @click="group.open = !group.open" v-text = "group.name">Title of Project 1</li>
-								<img ul v-show="group.open" src="img/project1.jpg" alt="Project 1">
-								<p>portfolio1.html</p>
+				<div id="portfolio">
+					<article class="dropdown">
+						<h2 class="menubtn">Portfolio</h2>
+						<div class="menu-content">
+							<a href="#htmlcssjs">html/css/js</a>
+							<a href="#adobe">Adobe</a>
+							<a href="#computergraphics">Computer Graphics</a>
+							<a href="#artwork">Artwork</a>
+						</div>
+						<div id="htmlcssjs">
+							
+						</div>
+						<div id="adobe">
+							<h3 class="">Adobe</h3>
+							<div id="a1" class="slideshow">
+								<img class="slide" style="display: block;" src="img/assessment1_poster.jpg" alt="s1">
+								<img class="slide" style="display: none;" src="img/assessment1_olmstead.jpg" alt="s2">
+							</div>
+							<div>
+								<a class="prev" onclick="plusSlides(-1, a1)">&#10094;</a>
+								<a class="next" onclick="plusSlides(1, a1)">&#10095;</a>
+							</div>
+							<div>
+								<span class="dot" onclick="currentSlide(1, a1)"></span>
+								<span class="dot" onclick="currentSlide(2, a1)"></span>
+							</div>
 
-								<li id="sub">Title of Project 2</li>
-								<img src="img/project2.jpg" alt="Project 2" >
-								<p>index.html</p>
-
-								<li id="sub">Title of Project 3 (aka new project)</li>
-								<!--<img src="img/project2.jpg" alt="Project 2" >-->
-								<p>index.html</p>								
-							</ul>
-						<li>adobe</li>
-							<ul>
-								<li></li>
-							</ul>						
-						<li>computer graphics</li>
-							<ul>
-								<li id="sub">ferris wheel</li>
-								<li id="sub">orbit cubes</li>
-								<li id="sub">cubes and other simple graphics</li>
-							</ul>						
-						<li>artwork</li>
-							<ul>
-								<li id="sub"></li>
-							</ul>
-					</ul>
-					
-				</article>
-				<article id="education">
-					<h2 class="title2">Education</h2>
-					<ul>
-						<li>University: CU Boulder</li>
-						<li>Major: Computer Science</li>
-						<li>Minor: Technology, Arts, and Media</li>
-						<li>Relevant Coursework: ...</li>
-							<ul>
-								<li id="sub">...</li>
-							</ul>
-					</ul>
-					
-				</article>
-				<article id="aboutMe">
-					<ul>
-						<li>Previous Employment:</li>
-							<ul>
-								<li id="sub">TO Media CO</li>
-								<li id="sub">Billabong</li>
-								<li id="sub">...</li>
-							</ul>
-						<li>...</li>
-						<li>Mission:</li>
-					</ul>
-				</article>
-				<article id="contact">
-					<h2 class="title2">Contact</h2>
-				</article>
+							<div id="a2" class="slideshow">
+								<img class="slide" style="display: block;" src="img/Assessment2.jpg" alt="s1.2">
+								<img class="slide" style="display: none;" src="img/Assessment22.jpg" alt="s2.2">
+								<img class="slide" style="display: none;" src="img/Assessment23.jpg" alt="s3.2">
+								<img class="slide" style="display: none;" src="img/Assessment24.jpg" alt="s4.2">
+								<img class="slide" style="display: none;" src="img/Assessment25.jpg" alt="s5.2">
+								<img class="slide" style="display: none;" src="img/Assessment26.jpg" alt="s6.2">
+								<img class="slide" style="display: none;" src="img/Assessment27.jpg" alt="s7.2">
+								<img class="slide" style="display: none;" src="img/Assessment28.jpg" alt="s8.2">
+								<img class="slide" style="display: none;" src="img/Assessment29.jpg" alt="s9.2">
+								<img class="slide" style="display: none;" src="img/Assessment210.jpg" alt="s10.2">
+								<img class="slide" style="display: none;" src="img/Assessment211.jpg" alt="s11.2">
+							</div>
+							<div>
+								<a class="prev" onclick="plusSlides(-1, a2)">&#10094;</a>
+								<a class="next" onclick="plusSlides(1, a2)">&#10095;</a>
+							</div>
+							<div>
+								<span class="dot" onclick="currentSlide(1, a2)"></span>
+								<span class="dot" onclick="currentSlide(2, a2)"></span>
+								<span class="dot" onclick="currentSlide(3, a2)"></span>
+								<span class="dot" onclick="currentSlide(4, a2)"></span>
+								<span class="dot" onclick="currentSlide(5, a2)"></span>
+								<span class="dot" onclick="currentSlide(6, a2)"></span>
+								<span class="dot" onclick="currentSlide(7, a2)"></span>
+								<span class="dot" onclick="currentSlide(8, a2)"></span>
+								<span class="dot" onclick="currentSlide(9, a2)"></span>
+								<span class="dot" onclick="currentSlide(10, a2)"></span>
+								<span class="dot" onclick="currentSlide(11, a2)"></span>
+							</div>
+						</div>
+						<div id="computergraphics">
+							
+						</div>
+						<div id="artwork">
+							
+						</div>
+					</article>
+				</div>
+				<div id="education">
+					<article class="dropdown">
+						<h2 class="menubtn">Education</h2>
+						<div class="menu-content">
+							<a href="#uni">University</a>
+							<a href="#major">Major</a>
+						</div>
+						<!--<ul>
+							<li>University: CU Boulder</li>
+							<li>Major: Computer Science</li>
+							<li>Minor: Technology, Arts, and Media</li>
+							<li>Relevant Coursework: ...</li>
+								<ul>
+									<li id="sub">...</li>
+								</ul>
+						</ul>-->
+						
+					</article>
+				</div>
+				<div id="aboutMe">
+					<article class="dropdown">
+						<h2 class="menubtn">About Me</h2>
+						<ul class="menu-content">
+							<li>Previous Employment:</li>
+								<ul>
+									<li id="sub">TO Media CO</li>
+									<li id="sub">Billabong</li>
+									<li id="sub">...</li>
+								</ul>
+							<li>...</li>
+							<li>Mission:</li>
+						</ul>
+					</article>
+				</div>
+				<div id="contact">
+					<article class="dropdown">
+						<h2 class="contactbanner">Contact</h2>
+					</article>
+				</div>
 			</div>
 		</main>
 	</div>
