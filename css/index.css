@@ -71,8 +71,11 @@ h2{
 }
 h3{
 	font-family: 'Staatliches', cursive;
+	font-size: 25pt;
+}
+h4{
+	font-family: 'Staatliches', cursive;
 	font-size: 20pt;
-	margin-left: 3%;
 }
 li{
 	font-family: 'Staatliches', cursive;
@@ -139,52 +142,34 @@ article{
     align-items: center;
     padding: 5%;
 }
-#adobe{
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
+.section{
 	text-align: center;
 }
 .slideshow{
-	max-height: 90vh;
-	max-width: 90vw;
 	margin-left: auto;
 	margin-right: auto;
 }
 .slide{
-	max-height: 60vh;
-	width: auto;
+	max-width: 30vw;
+	height: auto;
 	margin-left: 3%;
 	margin-right: 3%;
+	margin-bottom: 3%;
+	align-self: center;
+	flex-shrink: 0;
 }
-.dot{
-	cursor: pointer;
-	height: 15px;
-	width: 15px;
-	margin: 0 2px;
-	margin-top: 2vh;
-	background-color: #e6e9ed;
-	border-radius: 50%;
-	display: inline-block;
-	transition: background-color 0.6s ease;
+.row{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	overflow: auto;
+	flex-shrink: 0;
 }
-.active{
-  	background-color: #BF8173;
-}
-.dot:hover{
-	background-color: darkgrey;
-}
-.prev, .next {
-	text-align: center;
-  	cursor: pointer;
-	color: blue;
-	font-weight: bold;
-	font-size: 23px;
-	transition: 1s;
-	padding: 5px;
-	margin: 3vw;
-}
-.prev:hover, .next:hover {
-  background-color: lightgrey;
-  color: black;
+.col{
+	display: flex;
+	flex-direction: column;
+	flex-basis: 100%;
+	flex: 1;
+	overflow: auto;
+	flex-shrink: 0;
 }
