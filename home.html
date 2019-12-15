@@ -2,9 +2,9 @@
 <html>
 <head>
 	<title>Just For Fun</title>
-	<link rel="stylesheet" type="text/css" href="home.css">
+	<link rel="stylesheet" type="text/css" href="css/home.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-	<script type="text/javascript" src="home.js"></script>
+	<script type="text/javascript" src="js/home.js" defer></script>
 </head>
 <body>
 	<header><h1>Just For Fun</h1></header>
@@ -17,7 +17,6 @@
 	</nav>
 	<section>
 		<article id="intro">
-			<h3>Hi</h3>
 			<p>My name is Claire and these are some things that I like.</p>
 		</article>
 	</section>
@@ -140,6 +139,18 @@
 				</div>	
 			</div>
 		</div>
+		
+		<button id="newPost" onclick="myFunction() ">New Post</button>
+		<div id="myDIV" class="formBox" style="display: none;">
+			<button id="close" onclick="myFunction()" style="float: right;">X</button>
+			<form id="form1" action="/action_page.php" target="_blank">
+				select image:
+				<input type="file" name="pic" accept="image/*"><br><br>
+				image caption:
+				<input type="text" name="caption"><br><br>
+				<input type="submit" value="Publish">
+			</form>
+		</div>
 	</section>
 	<section id="home">
 		<h2>HOME</h2>
@@ -192,6 +203,18 @@
 					<p>Continuing with my reading theme, this library that leads into a rooftop garden seems like the ultimate space for peace and productivity.</p>
 				</div>
 			</div>
+		</div>
+		
+		<button id="newPost" onclick="myFunction() ">New Post</button>
+		<div id="myDIV" class="formBox" style="display: none;">
+			<button id="close" onclick="myFunction()" style="float: right;">X</button>
+			<form id="form1" action="/action_page.php" target="_blank">
+				select image:
+				<input type="file" name="pic" accept="image/*"><br><br>
+				image caption:
+				<input type="text" name="caption"><br><br>
+				<input type="submit" value="Publish">
+			</form>
 		</div>
 	</section>
 </body>
