@@ -84,6 +84,7 @@ li{
 	font-family: 'Open Sans Condensed', sans-serif;
 }
 article{
+	min-width: 80%;
 	height: 80vh;
 	margin: 3%;
 	margin-top: 7%;
@@ -173,5 +174,4 @@ article{
 	flex-shrink: 0;
 }
 .aspect{
-	max-width:80%;
-	margin: 0 auto;
+	width:500px;
