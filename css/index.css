@@ -174,4 +174,6 @@ article{
 	flex-shrink: 0;
 }
 .aspect{
-	width:500px;
+	width:1000px;
+	max-width: 100%;
+	margin: 0 auto;
