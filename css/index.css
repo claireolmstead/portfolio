@@ -173,3 +173,6 @@ article{
 	overflow: auto;
 	flex-shrink: 0;
 }
+.aspect{
+	max-width:80%;
+	margin: 0 auto;
