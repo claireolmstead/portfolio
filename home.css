@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Major+Mono+Display|Oswald|Poiret+One');
+
+body{
+	margin: 20px;
+}
+h1{
+	align-items: center;
+	color: orange;
+	text-align: center;
+	border-bottom: 2px solid;
+	margin-left: 32%;
+	margin-right: 32%;
+	font-family: 'Major Mono Display', monospace;
+	background-color: #deedf2;
+	font-size: 40px;
+}
+h2{
+	font-family: 'Oswald', sans-serif;
+	border-top: 2px solid;
+	border-bottom: 2px solid;
+	background-color: #f4fafc;
+	padding-top: 55px;
+}
+nav{
+	position: sticky;
+	top: 0;
+	padding: 1px;
+	z-index: 1;
+	width: 100%;
+	text-align: center;
+	align-items: center;
+	margin: 0 auto;
+	font-family: 'Poiret One', cursive;
+	background-color: #f4fafc;
+}
+a{
+	color: orange;
+}
+a:link{
+	text-decoration: none;
+	font-size: 23px;
+}
+a:hover{
+	transform: color, font-size;
+	transition: .75s;
+	color: lightblue;
+	font-size: 26px;
+}
+img{
+	width: 250px;
+	margin: 10px;
+}
+#style{
+	margin: 20px;
+	width: 100%;
+}
+#container {
+  	display: flex;
+  	justify-content: space-between;
+  	flex-wrap: wrap;
+  	margin: 20px;
+	background-color: transparent;
+}
+#card1{
+  	width: 250px;
+  	text-align: center;
+  	transition: transform 1.5s;
+  	transform-style: preserve-3d;
+}
+#card1:hover{
+  	transform: rotateY(180deg);
+}
+#pic, #text{
+	width:100%;
+	backface-visibility: hidden;
+}
+#text{
+	position: fixed;
+  	top: 0;
+  	overflow: scroll;
+	transform: rotateY(180deg);
+	transform: background-color;
+  	background-color: #e8e8e8;
+}
+ul{
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+}
+.formBox {
+	margin: auto;
+    width: 60%;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
