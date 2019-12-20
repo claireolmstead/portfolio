@@ -18,7 +18,7 @@ body{
 }
 /*----------------------*/
 header{
-	height: 100vh;
+	height: 45vh;
 	max-width: 100vw;
     display: flex;
     flex-direction: column;
@@ -28,6 +28,9 @@ header{
 
     font-size: 20pt;
     color: #261E17;
+}
+header #home{
+	height: 100vh;
 }
 .h1New{
 	font-family: 'Staatliches', cursive;
@@ -151,6 +154,13 @@ li{
 	margin-left: auto;
 	margin-right: auto;
 }
+.row{
+	padding-top: 3%;
+	background: #f2f2f2;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-bottom: 3%; 
+}
 .slide{
 	max-width: 30vw;
 	height: auto;
@@ -159,6 +169,81 @@ li{
 	margin-bottom: 3%;
 	align-self: center;
 	flex-shrink: 0;
+}
+#show{
+	padding-top: 3%;
+	background: #f2f2f2;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+#slide1{
+	display: inline-block;
+}
+#slide2{
+	display: inline-block;
+}
+#slide3{
+	display: none;
+}
+#slide4{
+	display: none;
+}
+#slide5{
+	display: none;
+}
+#slide6{
+	display: none;
+}
+#slide7{
+	display: none;
+}
+#slide8{
+	display: none;
+}
+#slide9{
+	display: none;
+}
+#slide10{
+	display: none;
+}
+#slide11{
+	display: none;
+}
+button{
+  background-color: #D84334;
+  border: none;
+  color: white;
+  text-align: center;
+  font-size: 17px;
+  padding: 5px;
+  width: 100px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-top: 1%;
+}
+button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+button:hover span {
+  padding-right: 25px;
+}
+
+button:hover span:after {
+  opacity: 1;
+  right: 0;
 }
 .row{
 	display: flex;
