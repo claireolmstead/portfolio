@@ -118,8 +118,8 @@ a img:hover{
 	z-index: 1;
 	font-size: 20pt;
 
-	visibility: hidden;
-    opacity: 0;
+	/*visibility: hidden;
+    opacity: 0;*/
 
     background-color: white;
     transition: opacity 2s, background-color 1s;
@@ -135,8 +135,8 @@ a img:hover{
 .dropdown:hover > .menu-content{
 	/*display: block;*/
 
-	visibility: visible;
-  	opacity: 1;
+	/*visibility: visible;
+  	opacity: 1;*/
 }
 .dropdown:hover .menubtn{
 	background-color: #b5b5b5;
