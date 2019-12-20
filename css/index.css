@@ -94,8 +94,8 @@ li{
 #sub{
 	font-family: 'Open Sans Condensed', sans-serif;
 }
-.part{
-
+a img:hover{
+	box-shadow: 5px 10px lightgrey;
 }
 .menubtn{
 	background-color: #d1d1d1;
