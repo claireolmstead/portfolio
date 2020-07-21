@@ -18,7 +18,7 @@ body{
 }
 /*----------------------*/
 header{
-	height: 100vh;
+	height: 45vh;
 	max-width: 100vw;
     display: flex;
     flex-direction: column;
@@ -28,6 +28,9 @@ header{
 
     font-size: 20pt;
     color: #261E17;
+}
+header #home{
+	height: 100vh;
 }
 .h1New{
 	font-family: 'Staatliches', cursive;
@@ -41,12 +44,16 @@ header{
 }
 .navNew{
 	top: 45%;
-	right: -2%;
+	right: -15%;
 	transform: rotate(90deg);
     position: fixed;
    	z-index: 2;
+   	padding: 1%;
+   	padding-left: 2%;
+	padding-right: 2%;
 	background-color: white;
     transition: transform 1s;
+    box-shadow: 5px 10px;
 }
 .h1OG{
 	font-family: 'Staatliches', cursive;
@@ -63,16 +70,23 @@ nav, a:active, a:visited{
 	color: #261E17;
 }
 nav, a:hover{
-	color: #BF8173;
+	color: #D84334;
 }
 h2{
 	font-family: 'Staatliches', cursive;
 	font-size: 30pt;
 }
+#indexH2{
+	font-family: 'Staatliches', cursive;
+	font-size: 15pt;
+}
 h3{
 	font-family: 'Staatliches', cursive;
+	font-size: 25pt;
+}
+h4{
+	font-family: 'Staatliches', cursive;
 	font-size: 20pt;
-	margin-left: 3%;
 }
 li{
 	font-family: 'Staatliches', cursive;
@@ -80,24 +94,20 @@ li{
 #sub{
 	font-family: 'Open Sans Condensed', sans-serif;
 }
-article{
-	min-width: 80%;
-	height: 80vh;
-	margin: 3%;
-	margin-top: 7%;
-	border-style: solid;
-	overflow: visible;
-	background-color: white;
+a img:hover{
+	box-shadow: 5px 10px lightgrey;
 }
 .menubtn{
-	background-color: #F2B199;
+	background-color: #d1d1d1;
 	justify-content: center;
     align-items: center;
-    padding: 5%;
+    padding: 2%;
+    padding-left: 5%;
     overflow: visible;
     transition: background-color 1s;
 }
 .dropdown{
+	width: 100%;
 	position: relative;
 	display: inline-block;
 	overflow: auto;
@@ -105,99 +115,160 @@ article{
 .dropdown > .menu-content{
 	/*display: none;
 	position: absolute;*/
-	width: 100%;
-	max-width: 70%;
-	padding-left: 5%;
-	padding-right: 5%;
 	z-index: 1;
 	font-size: 20pt;
 
-	visibility: hidden;
-    opacity: 0;
+	/*visibility: hidden;
+    opacity: 0;*/
 
     background-color: white;
     transition: opacity 2s, background-color 1s;
 }
 .menu-content a{
-	width: 100%;
-	max-width: 70%;
 	text-decoration: none;
 	display: block;
 }
 .menu-content a:hover{
-	max-width: 70%;
-	background-color: #f5cfc1;
+	background-color: #b5b5b5;
 	color: black;
-}
-ul{
-	width:100%;
-	max-width: 60%;
-	margin: 0 auto;
 }
 .dropdown:hover > .menu-content{
 	/*display: block;*/
 
-	visibility: visible;
-  	opacity: 1;
+	/*visibility: visible;
+  	opacity: 1;*/
 }
 .dropdown:hover .menubtn{
-	background-color: #f5cfc1;
+	background-color: #b5b5b5;
 }
-.contactbanner{
-	background-color: #F2B199;
+/*.contactbanner{
+	background-color: #d1d1d1;
 	justify-content: center;
     align-items: center;
     padding: 5%;
-}
-#adobe{
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
+}*/
+.section{
 	text-align: center;
 }
 .slideshow{
-	max-height: 90vh;
-	max-width: 90vw;
 	margin-left: auto;
 	margin-right: auto;
 }
+.row{
+	padding-top: 3%;
+	background: #f2f2f2;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-bottom: 3%; 
+}
 .slide{
-	max-height: 60vh;
-	width: auto;
+	max-width: 30vw;
+	height: auto;
 	margin-left: 3%;
 	margin-right: 3%;
+	margin-bottom: 3%;
+	align-self: center;
+	flex-shrink: 0;
 }
-.dot{
-	cursor: pointer;
-	height: 15px;
-	width: 15px;
-	margin: 0 2px;
-	margin-top: 2vh;
-	background-color: #e6e9ed;
-	border-radius: 50%;
+#show{
+	padding-top: 3%;
+	background: #f2f2f2;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+#slide1{
 	display: inline-block;
-	transition: background-color 0.6s ease;
 }
-.active{
-  	background-color: #BF8173;
+#slide2{
+	display: inline-block;
 }
-.dot:hover{
-	background-color: darkgrey;
+#slide3{
+	display: none;
 }
-.prev, .next {
-	text-align: center;
-  	cursor: pointer;
-	color: blue;
-	font-weight: bold;
-	font-size: 23px;
-	transition: 1s;
-	padding: 5px;
-	margin: 3vw;
+#slide4{
+	display: none;
 }
-.prev:hover, .next:hover {
-  background-color: lightgrey;
-  color: black;
+#slide5{
+	display: none;
 }
-#slideNav{
-	margin-bottom: 20px;
+#slide6{
+	display: none;
 }
+#slide7{
+	display: none;
+}
+#slide8{
+	display: none;
+}
+#slide9{
+	display: none;
+}
+#slide10{
+	display: none;
+}
+#slide11{
+	display: none;
+}
+button{
+  background-color: #D84334;
+  border: none;
+  color: white;
+  text-align: center;
+  font-size: 17px;
+  padding: 5px;
+  width: 100px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-top: 1%;
+}
+button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+button:hover span {
+  padding-right: 25px;
+}
+
+button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.row{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	overflow: auto;
+	flex-shrink: 0;
+}
+.col{
+	display: flex;
+	flex-direction: column;
+	flex-basis: 100%;
+	flex: 1;
+	overflow: auto;
+	flex-shrink: 0;
+}
+/*-----------------------*/
+#topcolor{
+	width: 100%;
+	height: 10%;
+	border-style: solid;
+	border-color: #D84334;
+	background-color: #D84334;
+}
+footer{
+	margin-left: 5%;
+}
+
